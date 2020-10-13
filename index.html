@@ -6,7 +6,42 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>초대장</title>
+
         <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+        <script type="text/javascript">
+            function shareKakaotalk() {
+                Kakao.init("fdf7755775a0f41d7776608d8247a5a1");   
+                Kakao.Link.sendDefault({
+                      objectType:"feed"
+                    , content : {
+                          title:"초대장" 
+                        , description:"내용"
+                        , imageUrl:"https://hyeongmin-sunghye.github.io/wedding-card/assets/img/gallery/thumbnails/1.jpg" 
+                        , link : {
+                              mobileWebUrl:"https://hyeongmin-sunghye.github.io/wedding-card/" 
+                            , webUrl:"https://hyeongmin-sunghye.github.io/wedding-card/" 
+                        }
+                    }
+                    , social : {
+                          likeCount:0   
+                        , commentCount:0   
+                        , sharedCount:0     
+                    }
+                    , buttons : [
+                        {
+                              title:"게시글 확인" 
+                            , link : {
+                                mobileWebUrl:"https://hyeongmin-sunghye.github.io/wedding-card/" 
+                              , webUrl:"https://hyeongmin-sunghye.github.io/wedding-card/" 
+                            }
+                        }
+                    ]
+                });
+            }
+        </script>
+
+
         <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
         <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
@@ -232,9 +267,18 @@
                         <p class="text-muted mb-0">저희 두사람의 새 여행이 시작되는 이 날</p>
                         <p class="text-muted mb-0">함께 빛내주신다면 더없는 기쁨이 되겠습니다.</p>         
                         <p class="text-muted mb-0">감사합니다.</p>      
-                        <br><br><br>
+                        <br>
+                        <a href="javascript:;" id="kakao-link-btn">
+                            <img onclick="shareKakaotalk();" src="assets/img/kakaolink_btn_small.png"/>
+                        </a>
+                        <p class="text-muted mb-0">카카오톡 공유하기</p>
+                        <br><br>
                     </div>
+
                 </div>
+
+                
+
             </div>
         </section>
 
