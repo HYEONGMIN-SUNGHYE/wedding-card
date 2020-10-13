@@ -9,38 +9,6 @@
 
         <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
         <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
-        <script type="text/javascript">
-            function shareKakaotalk() {
-                Kakao.init("fdf7755775a0f41d7776608d8247a5a1");   
-                Kakao.Link.sendDefault({
-                      objectType:"feed"
-                    , content : {
-                          title:"서형민♥조성혜의 결혼식에 초대합니다." 
-                        , description:"-일시: 2020.12.5.(토) 12:20\n-장소: 상록아트홀(서울, 역삼동)\n\n"
-                        , imageUrl:"https://hyeongmin-sunghye.github.io/wedding-card/assets/img/gallery/thumbnails/1.jpg" 
-                        , link : {
-                              mobileWebUrl:"https://hyeongmin-sunghye.github.io/wedding-card/" 
-                            , webUrl:"https://hyeongmin-sunghye.github.io/wedding-card/" 
-                        }
-                    }
-                    , social : {
-                          likeCount:0   
-                        , commentCount:0   
-                        , sharedCount:0     
-                    }
-                    , buttons : [
-                        {
-                              title:"초대장 자세히 보기" 
-                            , link : {
-                                mobileWebUrl:"https://hyeongmin-sunghye.github.io/wedding-card/" 
-                              , webUrl:"https://hyeongmin-sunghye.github.io/wedding-card/" 
-                            }
-                        }
-                    ]
-                });
-            }
-        </script>
-
 
         <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
@@ -127,7 +95,7 @@
                     <div class="col-lg-8 text-center">
                         <h2 class="mt-0">초대합니다</h2>
                         <hr class="divider my-4" />
-                        <p class="text-muted-50 mb-4">서로가 마주보며 다져온 사랑을 이제 함께 한 곳을 바라보며 걸어갈 수 있는 큰 사랑으로 키우고자 합니다. 저희 두 사람이 사랑의 이름으로 지켜나갈 수 있도록 앞날을 축복해 주시면 감사하겠습니다.</p>
+                        <p class="text-muted-50 mb-4">겨울로 가는 길목. <br>서로의 사랑을 약속하는 자리에 소중한 여러분들을 모시고 싶습니다.<br>귀한 걸음 하시어 축복과 격려 주시면 감사하겠습니다.</p>
                         <p class="text-muted-50 mb-4" style="display: inline-block;"><strong>서영식 · 정운옥<strong></p>
                         <p class="text-muted-50 mb-4" style="font-size: 80%; display: inline-block;">의 장남</p> 
                         <p class="text-muted-50 mb-4" style="display: inline-block;"><strong>형민<strong></p>
@@ -239,19 +207,16 @@
                     <div class="col-lg-8 text-center">
                         <br><br>
                         <p class="text-muted mb-0">지하철</p>
-                        <p class="text-muted mb-0">2호선, 분당선 "선릉역" 5번 출구 도보 5분</p>
-                        <p class="text-muted mb-0">▶ 선릉역 5번 출구 셔틀버스 수시운행</p>
+                        <p class="text-muted mb-0">2호선, 분당선 선릉역 5번 출구 도보 5분 거리</p>
+                        <p class="text-muted mb-0">(선릉역 5번 출구 셔틀버스 수시운행)</p>
                         <br>
                         <p class="text-muted mb-0">버스</p>
-                        <p class="text-muted mb-0">"KT 강남지사" 하차</p>
-                        <p class="text-muted mb-0">▶ 간선: 141(도봉산↔염곡동) / 지선:3422(장지동↔압구정동)</p>
-                        <p class="text-muted mb-0">"한국기술센터", "상록회관" 하차</p>
-                        <p class="text-muted mb-0">▶ 간선: 146(상계동↔강남역), 360(송파↔여의도), 740(덕은동↔잠실역)</p>
+                        <p class="text-muted mb-0">간선버스: 141, 146, 360, 740</p>
+                        <p class="text-muted mb-0">지선버스: 3422</p>
                         <br>
                         <p class="text-muted mb-0">자가용</p>
-                        <p class="text-muted mb-0">▶ 내비게이션: "서울상록회관" 입력</p>
-                        <p class="text-muted mb-0">▶ 경부고속도로: 양재 IC 진입 → 양재대로에서 매봉터널 → 강남 세브란스 병원 방면 진입 → 직진</p>
-                        <p class="text-muted mb-0">▶ 1시간 30분 무료 주차</p>
+                        <p class="text-muted mb-0">경부고속도로: 양재 IC 진입 → 양재대로에서 매봉터널 → 강남 세브란스 병원 방면 진입 → "서울상록회관" </p>
+                        <p class="text-muted mb-0">(1시간 30분 무료 주차)</p>
                         <br>
                     </div>
                 </div>
@@ -267,18 +232,50 @@
                         <p class="text-muted mb-0">저희 두사람의 새 여행이 시작되는 이 날</p>
                         <p class="text-muted mb-0">함께 빛내주신다면 더없는 기쁨이 되겠습니다.</p>         
                         <p class="text-muted mb-0">감사합니다.</p>      
-                        <br>
-                        <a href="javascript:;" id="kakao-link-btn">
-                            <img onclick="shareKakaotalk();" src="assets/img/kakaolink_btn_small.png"/>
-                        </a>
-                        <p class="text-muted mb-0">카카오톡 공유하기</p>
-                        <br><br>
+                        <br><br><br>
                     </div>
+                </div>                
+            </div>
 
-                </div>
+            <div class="container">
+                <a href="javascript:;" id="kakao-link-btn">
+                    <img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_small.png" width="10px" />
+                </a>
 
-                
-
+                <script type="text/javascript">
+                  //<![CDATA[
+                    // // 사용할 앱의 JavaScript 키를 설정해 주세요.
+                    Kakao.init('fdf7755775a0f41d7776608d8247a5a1');
+                    // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+                    Kakao.Link.createDefaultButton({
+                      container: '#kakao-link-btn',
+                      objectType: 'feed',
+                      content: {
+                        title: '초대장',
+                        description: '내용, 주로 해시태그',
+                        imageUrl: 'https://hyeongmin-sunghye.github.io/wedding-card/assets/img/gallery/thumbnails/2.jpg/',
+                        link: {
+                          webUrl: 'https://hyeongmin-sunghye.github.io/wedding-card/',
+                          mobileWebUrl: 'https://hyeongmin-sunghye.github.io/wedding-card/'
+                        }
+                      },
+                      social: {
+                        likeCount: 286,
+                        commentCount: 45,
+                        sharedCount: 845
+                      },
+                      buttons: [
+                        {
+                          title: '초대장',
+                          link: {
+                            mobileWebUrl: 'https://hyeongmin-sunghye.github.io/wedding-card/',
+                            webUrl: 'https://hyeongmin-sunghye.github.io/wedding-card/'
+                          }
+                        }  
+                      ]
+                    });
+                  //]]>
+                </script>
             </div>
         </section>
 
